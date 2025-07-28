@@ -1,0 +1,9 @@
+.home-container{
+    background-image: url('https://pplx-res.cloudinary.com/image/upload/v1753161954/dalle3_images/b4ylh2tjwo7lo84iag7u.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: felx;
+    justify-self: center;
+    align-items: center;
+}

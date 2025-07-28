@@ -1,0 +1,92 @@
+
+/* Main container to center the calculator */
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://pplx-res.cloudinary.com/image/upload/v1753201860/dalle3_images/bdxxaaeyvhhgsqjiqddf.png");
+}
+
+/* Calculator body */
+.calculator {
+  width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: #2d3436;
+}
+
+/* Display screen */
+.display {
+  background-color: #222;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 20px;
+  text-align: right;
+  font-family: 'Arial', sans-serif;
+  min-height: 40px;
+  word-wrap: break-word;
+}
+
+/* Button grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+/* General button styling */
+.button {
+  background-color: #636e72;
+  color: #fff;
+  border: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #b2bec3;
+}
+
+.button:active {
+  background-color: #8395a7;
+}
+
+/* Operator button styling */
+.operator {
+  background-color: #ff9f43;
+}
+
+.operator:hover {
+  background-color: #feca57;
+}
+
+/* Clear button styling */
+.clear {
+  background-color: #d63031;
+}
+
+.clear:hover {
+  background-color: #ff7675;
+}
+
+/* Equals button styling */
+.equals {
+  background-color: #0984e3;
+}
+
+.equals:hover {
+  background-color: #74b9ff;
+}
+
+/* Spanning classes for grid layout */
+.span-two {
+  grid-column: span 2;
+}
+
+.span-two-rows {
+  grid-row: span 2;
+}
