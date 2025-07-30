@@ -2,10 +2,11 @@
 /* Main container to center the calculator */
 .calculator-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("https://pplx-res.cloudinary.com/image/upload/v1753201860/dalle3_images/bdxxaaeyvhhgsqjiqddf.png");
+  background-color: #ffffff;
 }
 
 /* Calculator body */
@@ -13,8 +14,16 @@
   width: 320px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  background: #2d3436;
+  
+  background: #c5bfe4;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.calculator-heading{
+  font-family: "Roboto";
+  color: rgb(37, 71, 158);
+  margin: 10px;
 }
 
 /* Display screen */
@@ -27,13 +36,14 @@
   font-family: 'Arial', sans-serif;
   min-height: 40px;
   word-wrap: break-word;
+  margin-bottom: 5px;
 }
 
 /* Button grid */
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 5px;
 }
 
 /* General button styling */
@@ -45,6 +55,7 @@
   font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  border-radius: 5px;
 }
 
 .button:hover {
@@ -52,7 +63,7 @@
 }
 
 .button:active {
-  background-color: #8395a7;
+  background-color: #19be5b;
 }
 
 /* Operator button styling */
